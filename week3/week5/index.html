@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Profile</title>
+  <style>
+
+    body {
+      background-color: lightblue;
+      text-align: left;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+    }
+
+    h1, h2, p {
+      padding: 5px;
+    }
+
+    h2 {
+      color: black;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="studentProfile">
+  <h1>Helloweee</h1>
+  <hr>
+  <h2>Personal Information</h2>
+  <p>Name: Jay</p>
+  <p>Age: 19</p>
+  <p>City: Taguig</p>
+  <h2>Academic Information</h2>
+  <p>Course: Computer Science</p>
+  <p>Subject: WEBPROG</p>
+
+  <hr>
+  <h2>About Me</h2>
+  <p>Hello, my name is Sandro Jay, but everyone just calls me Jay. I'm not particularly interesting because I'm shy and prefer quiet places. In my spare time, I like to go to my friends' houses and play games or watch anime/movies.</p>
+  <p> I also enjoy listening to music. In addition, I have a interest in sports, particularly basketball. I've been playing for a long time and used to cycle as well.</p>
+  </div>
+  <hr>
+<button id="resourcesButton" onclick="showResources()">Resources</button>
+
+<div id="resources" style="display: none;">
+  <h2>Resources</h2>
+  <a href="https://www.w3schools.com/html/default.asp">HTML Tutorial - https://www.w3schools.com/html/default.asp</a>
+  <br>
+  <a href="https://www.w3schools.com/css/default.asp">CSS Tutorial - https://www.w3schools.com/css/default.asp</a>
+  <br>
+  <br>
+  <button onclick="showProfile()">Back</button>
+</div>
+
+<script>
+  function showResources() {
+    document.getElementById("resources").style.display = "block";
+    document.getElementById("studentProfile").style.display = "none";
+  }
+  function showProfile() {
+    document.getElementById("resources").style.display = "none";
+    document.getElementById("studentProfile").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
