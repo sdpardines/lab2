@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Profile</title>
+  <style>
+    body {
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://media.istockphoto.com/id/1337977426/photo/dark-gray-and-black-grunge-cement-wall-studio-room-space-product-background-template.jpg?b=1&s=170667a&w=0&k=20&c=4dVCV5KtJKEhuQtp5dbnFmwMBAzNknz35VUIa0C3KoE=');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: left;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 35px;
+    }
+
+    p {
+      text-align: center;
+      padding: 5px;
+      color: white;
+      font-size: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+      font-size: 27px;
+    }
+
+    h3 {
+      text-align: left;
+      color: white;
+      font-size: 28px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      line-height: 2;
+      
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      width: 250px;
+
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .navbar a {
+      font-size: 25px;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="home" style="display: flex; align-items: center;">
+    <div style="width: 40%;">
+      <h1 style="font-size: 80px;">Welcome</h1>
+      <h1 style="font-size: 80px;">to my</h1>
+      <h1 style="font-size: 80px;">Website</h1>
+    </div>
+    <img src="https://i.pinimg.com/236x/f2/91/12/f291122912b4f11388f52e74466b1535.jpg" alt="header image" style="width: 20%;">
+</div>
+
+  </div>
+  <div id="studentProfile" style="display: none;">
+  <h1>Hellowee</h1>
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/322660117_1210816689844160_9124708459244359072_n.jpg?stp=dst-jpg_s206x206&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeH_rFax9gWWNhmzd4bnuK4DIDy4m_XvQ1QgPLib9e9DVKsjZE5Ai4N4Y0Dfbij6CfLEVSPlr6LFqfRWNnZh3w9g&_nc_ohc=_2hUEyxltD8AX82yWi2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSjATBcTwSOkeDBVt4_fq8E8LQ3U_F_p3Bw2ict3LB60w&oe=63EC3557" alt="profile picture">
+
+  <h2>About Me</h2>
+  <p>Hello, my name is Jay. I'm shy and prefer quiet places. In my spare time, I like to go to my friends' houses and play games or watch anime/movies.</p>
+  <p> I also enjoy listening to music. In addition, I have a interest in sports, particularly basketball. I've been playing for a long time and used to cycle as well.</p>
+  </div>
+  <div id="resources" style="display: none;">
+  <h3>Resources:</h3>
+  <a href="https://www.w3schools.com/html/default.asp">HTML Tutorial - https://www.w3schools.com/html/default.asp</a>
+  <br>
+  <a href="https://www.w3schools.com/css/default.asp">CSS Tutorial - https://www.w3schools.com/css/default.asp</a>
+  <br>
+  <a href="https://www.w3schools.com/js/default.asp">JavaScript Tutorial - https://www.w3schools.com/js/default.asp</a>
+  <br>
+  <br>
+  </div>
+  
+<div class="navbar">
+<a href="#home" onclick="showHome()">Home</a>
+<a href="#about" onclick="showProfile()">About Me</a>
+<a href="#resources" onclick="showResources()">Resources</a>
+</div>
+
+<script>
+  function showResources() {
+    document.getElementById("resources").style.display = "block";
+    document.getElementById("studentProfile").style.display = "none";
+    document.getElementById("home").style.display = "none";
+  }
+  function showProfile() {
+    document.getElementById("resources").style.display = "none";
+    document.getElementById("studentProfile").style.display = "block";
+    document.getElementById("home").style.display = "none";
+  }
+  function showHome() {
+    document.getElementById("home").style.display = "block";
+    document.getElementById("studentProfile").style.display = "none";
+    document.getElementById("resources").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
